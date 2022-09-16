@@ -9,10 +9,11 @@ import json
 import pymongo 
 import credential
 # convert csv to json format
-# csvfile='C:\Practice\csv2mongodb\titanic.csv'
+# csvfile='~/Coding/git/importdatatomongodb\titanic.csv'
 # You need use a raw string for the path variable, or escape the backslash:
-df = pd.read_csv(r'C:\Practice\csv2mongodb\titanic.csv')
-# df.to_json('yourjson.json',orient = "records")                               # saving to json file
+df = pd.read_csv(r'~\Coding\git\importdatatomongodb\titanic.csv')
+# df.to_json('yourjson.json',orient = "records")                              
+# saving to json file
 # # loading the json file
 # jdf = open('yourjson.json').read()
 # file_data = json.loads(jdf)
@@ -36,7 +37,7 @@ print(connection_string)
 # Making Connection
 myclient = MongoClient('localhost', 27017) 
 db=myclient["sandbox"]
-Collection = db["titanic2"]
+Collection = db["titanic"]
 print(myclient.list_database_names())
 #bsonx = BSON.encode(jsonx)
 

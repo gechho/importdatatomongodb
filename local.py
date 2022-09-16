@@ -5,9 +5,9 @@ import json
 from pymongo import MongoClient
 
 
-#excelfile = open('C:/Practice/titanic.xlsx','r')
+#excelfile = open('~/Coding/git/importdatatomongodb/titanic.xlsx','r')
 
-excelfile ='C:/Practice/titanic2.xlsx'
+excelfile ='~/Coding/git/importdatatomongodb/titanic.xlsx'
 
 df = pd.read_excel(excelfile)
 #print(df)
